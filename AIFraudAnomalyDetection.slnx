@@ -4,6 +4,10 @@
     <Project Path="creational/abstract-factory/Abstract.Factory.Application/Abstract.Factory.Application.csproj" />
     <Project Path="creational/abstract-factory/Abstract.Factory.Models/Abstract.Factory.Models.csproj" />
   </Folder>
+  <Folder Name="/creational/builder/">
+    <Project Path="creational/builder/Builder.Application/Builder.Application.csproj" />
+    <Project Path="creational/builder/Builder.Models/Builder.Models.csproj" />
+  </Folder>
   <Folder Name="/creational/factory-method/">
     <Project Path="creational/factory-method/Factory.Method.Application/Factory.Method.Application.csproj" />
     <Project Path="creational/factory-method/Factory.Method.Models/Factory.Method.Models.csproj" />
