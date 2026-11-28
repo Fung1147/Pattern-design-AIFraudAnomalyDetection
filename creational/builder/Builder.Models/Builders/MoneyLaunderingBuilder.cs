@@ -4,11 +4,11 @@ namespace Builder.Models.Builders
 {
     public class MoneyLaunderingBuilder : FraudModelBuilder
     {
-        private MoneyLaunderingModel _model = new();
+        private MoneyLaundering _model = new();
 
         public MoneyLaunderingBuilder() => Reset();
 
-        public void Reset() => _model = new MoneyLaunderingModel();
+        public void Reset() => _model = new MoneyLaundering();
 
         public void SetTierMetadata(string modelId, string tierLevel)
         {
@@ -38,9 +38,9 @@ namespace Builder.Models.Builders
         public void BuildAlertIntegration()
             => _model.AlertIntegrationChannel = "AOC 1441 Mule Freeze & SAR Auto-Filing";
 
-        public MoneyLaunderingModel GetResult()
+        public MoneyLaundering GetResult()
         {
-            MoneyLaunderingModel result = _model;
+            MoneyLaundering result = _model;
             Reset();
             return result;
         }

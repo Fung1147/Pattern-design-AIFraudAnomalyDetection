@@ -2,8 +2,8 @@ namespace Factory.Method.Models.Products
 {
     public class CreditCardExtractor : TransactionExtractor
     {
-        public string ChannelType => "CREDIT_CARD";
-        private readonly string _standard = "PCI-DSS v4.0";
+        public string ChannelType {get;} = "CREDIT_CARD";
+        private string _standard = "PCI-DSS v4.0";
 
         public void ParseData(TransactionData data)
             => Console.WriteLine($"[{ChannelType}] แกะข้อมูล ISO-8583 รายการ {data.TransactionId} ยอด {data.Amount:N2} บาท");

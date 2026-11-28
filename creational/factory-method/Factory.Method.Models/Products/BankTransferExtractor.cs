@@ -2,8 +2,8 @@ namespace Factory.Method.Models.Products
 {
     public class BankTransferExtractor : TransactionExtractor
     {
-        public string ChannelType => "INTERBANK_TRANSFER";
-        private readonly string _regulation = "BOT-PDPA";
+        public string ChannelType { get; } = "INTERBANK_TRANSFER";
+        private string _regulation = "BOT-PDPA";
 
         public void ParseData(TransactionData data)
             => Console.WriteLine($"[{ChannelType}] อ่านข้อมูลโอนเงินรายการ {data.TransactionId} ยอด {data.Amount:N2} บาท");

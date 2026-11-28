@@ -1,6 +1,6 @@
 namespace Builder.Models.Products
 {
-    public class AccountTakeoverModel : FraudDetectionModel
+    public class AccountTakeover : FraudDetectionModel
     {
         public string DeviceFingerprintDepth { get; set; } = string.Empty;
         public bool RequiresBehavioralBiometrics { get; set; }
